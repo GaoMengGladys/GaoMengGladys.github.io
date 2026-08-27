@@ -6,51 +6,306 @@
   <title>Meng Gao</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 700px;
-      margin: 60px auto;
-      padding: 0 20px;
-      line-height: 1.6;
+      font-family: Arial, Helvetica, sans-serif;
       color: #222;
+      background: #fff;
+      margin: 0;
+      line-height: 1.75;
     }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 24px 60px;
+    }
+
+    a {
+      color: #1a5fb4;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .top {
+      display: grid;
+      grid-template-columns: 1fr 240px;
+      gap: 32px;
+      align-items: start;
+      margin-bottom: 36px;
+    }
+
     h1 {
-      margin-bottom: 10px;
+      margin: 0 0 14px;
+      font-size: 34px;
+      font-weight: 700;
     }
+
+    h2 {
+      font-size: 26px;
+      margin-top: 42px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+    }
+
+    .profile-img {
+      width: 220px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 1px solid #ddd;
+      background: #f3f3f3;
+    }
+
+    .links {
+      margin: 16px 0;
+      font-size: 16px;
+    }
+
     .links a {
-      display: inline-block;
-      margin-right: 15px;
-      color: #0366d6;
-      text-decoration: none;
+      margin-right: 10px;
     }
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 18px;
-      background: #0366d6;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
+
+    .note {
+      margin-top: 14px;
+      color: #444;
     }
-    .button:hover {
-      background: #024ea2;
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      margin-top: 8px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .paper, .entry {
+      margin-bottom: 22px;
+    }
+
+    .paper-title, .entry-title {
+      font-weight: 700;
+      font-size: 17px;
+    }
+
+    .authors, .meta {
+      color: #444;
+      font-size: 15px;
+    }
+
+    .venue {
+      font-style: italic;
+      color: #333;
+      margin: 2px 0 4px;
+    }
+
+    .small-links a {
+      margin-right: 10px;
+      font-size: 15px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .footnote {
+      color: #666;
+      font-size: 14px;
+    }
+
+    @media (max-width: 760px) {
+      .top {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-img {
+        width: 180px;
+      }
+
+      .two-col {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Your Name</h1>
-  <p>
-    My name is Meng Gao, and I am currently a second-year Master’s student in Artificial Intelligence at Tsinghua University, advised by Professor Yujiu Yang. I received my bachelor’s degree in mathematics from Fudan University (Talent Program). 
-  </p>
+  <div class="container">
 
-  <div class="links">
-    <a href="mailto:youremail@example.com">Email</a>
-    <a href="https://www.linkedin.com/in/your-linkedin/" target="_blank">LinkedIn</a>
-    <a href="https://github.com/yourname" target="_blank">GitHub</a>
+    <div class="top">
+      <div>
+        <h1>Meng Gao</h1>
+
+        <p>
+          I am a master's student in Artificial Intelligence at Tsinghua University, advised by
+          Prof. Yujiu Yang. Before that, I received my Bachelor's degree in Mathematics from
+          Fudan University.
+        </p>
+
+        <p>
+          My research interests include reinforcement learning,
+          efficient inference, and the theoretical foundations of large models.
+          I am currently a research intern at the Qwen-Omni Team, Alibaba, working on
+          proactive learning. Previously, I interned at
+          Microsoft Research Asia, where I worked on efficient multimodal retrieval and
+          inference acceleration.
+        </p>
+
+        <div class="links">
+          <a href="mailto:gaom24@mails.tsinghua.edu.cn">Email</a> /
+          <a href="https://www.linkedin.com/in/meng-gao-b47b4b3b6/" target="_blank">LinkedIn</a> /
+          <a href="https://github.com/GaoMengGladys" target="_blank">GitHub</a> /
+          <a href="CV.pdf" target="_blank">CV</a>
+        </div>
+
+        <p class="note">
+          I expect to graduate in 2027 and plan to apply for PhD programs. Feel free to contact me if you are interested in my work or potential collaboration.
+        </p>
+      </div>
+
+      <div>
+        <img src="photo.jpg" alt="Meng Gao profile photo" class="profile-img" />
+      </div>
+    </div>
+
+<div class="section">
+  <h2>Publications</h2>
+  <p class="footnote"><em>(* denotes equal contribution.)</em></p>
+
+  <div class="paper">
+    <div class="paper-title">Skim and Skip: Hierarchical Adaptive Inference for Efficient Multimodal Retrieval</div>
+    <div class="authors">
+      <strong>Meng Gao*</strong>, Yizhen Zhang*, Yang Ding*, Ziqi Dai, Shuoshuo Zhang, Junjie Wang,
+      Taiqiang Wu, Chufan Shi, Lei Ji, Jian Jiao, Linfeng Zhang, Yeyun Gong, Yujiu Yang
+    </div>
+    <div class="venue">EMNLP 2026 (Main Conference)</div>
+    <div class="small-links">
+      <a href="#" target="_blank">Paper</a> /
+      <a href="#" target="_blank">Code</a>
+    </div>
   </div>
 
-  <p>
-    Welcome to my personal page.
-  </p>
+  <div class="paper">
+    <div class="paper-title">AnyCap: Omni-Modal Captioning with Instruction Alignment</div>
+    <div class="authors">
+      Yiming Ren*, Zhiqiang Lin*, Yu Li*, <strong>Meng Gao*</strong>, Junjie Wang, Zicheng Lin,
+      Jifeng Dai, Yujiu Yang, Wenhai Wang, Ruihang Chu
+    </div>
+    <div class="venue">EMNLP 2026 (Main Conference)</div>
+    <div class="small-links">
+      <a href="#" target="_blank">Paper</a> /
+      <a href="#" target="_blank">Code</a>
+    </div>
+  </div>
+</div>
+
+    <div class="section">
+  <h2>Manuscripts</h2>
+
+  <div class="paper">
+    <div class="paper-title">AudioSpan: Spanning the Duration and Depth of Audio Comprehension</div>
+    <div class="authors">
+      Wen Huang*, Yunfei Chu*, <strong>Meng Gao</strong>, Haolin He, Jin Xu
+    </div>
+    <div class="venue">Manuscript</div>
+    <div class="small-links">
+      <a href="#" target="_blank">Preprint</a>
+    </div>
+  </div>
+
+  <div class="paper">
+    <div class="paper-title">MLP: Modality-Aware Layer Pruning for Efficient Multimodal Retrieval</div>
+    <div class="authors">
+      Minji Seo, <strong>Meng Gao</strong>, Zhiwei Yu, Fanhong Li, Jaesik Park, Yujiu Yang, Lei Ji
+    </div>
+    <div class="venue">Manuscript</div>
+    <div class="small-links">
+      <a href="#" target="_blank">Preprint</a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="section">
+  <h2>Education</h2>
+
+  <div class="entry">
+    <div class="entry-title">Tsinghua University</div>
+    <div class="meta">Master of Engineering in Artificial Intelligence (Aug. 2024 – Jun. 2027)</div>
+    <div>
+      Advisor:
+      <a href="https://scholar.google.com/citations?user=4gH3sxsAAAAJ&hl=en&oi=ao" target="_blank">Yujiu Yang</a>
+    </div>
+    <div>GPA: 3.9/4.0 (Top 10%)</div>
+    <div>Research interests: reinforcement learning, efficiency, and theoretical foundations of large models</div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-title">Fudan University</div>
+    <div class="meta">
+      Bachelor of Science in Mathematics
+      <a href="https://math.fudan.edu.cn/f5/4f/c33035a324943/page.htm" target="_blank">(Talent Program)</a>
+      (Aug. 2020 – Jun. 2024)
+    </div>
+    <div>
+      Advisor:
+      <a href="https://yingzhouli.com/" target="_blank">Yingzhou Li</a>
+    </div>
+    <div>Research interests: fast algorithms and quantum computing</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Experience</h2>
+
+  <div class="entry">
+    <div class="entry-title">Qwen-Omni Team, Alibaba</div>
+    <div class="meta">Research Intern (Mar. 2026 – Present)</div>
+    <div>Topic: Proactive learning</div>
+    <div>
+      Mentors:
+      <a href="https://scholar.google.com/citations?user=41QhCyYAAAAJ&hl=en&oi=ao" target="_blank">Yunfei Chu</a>,
+      <a href="https://scholar.google.com/citations?user=COYDNmYAAAAJ&hl=en&oi=ao" target="_blank">Jin Xu</a>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-title">Microsoft Research Asia (MSRA)</div>
+    <div class="meta">Research Intern (Jun. 2025 – Feb. 2026)</div>
+    <div>Topic: Efficient multimodal retrieval and inference acceleration</div>
+    <div>
+      Mentors:
+      <a href="https://scholar.google.com/citations?user=IruOVk4AAAAJ&hl=en&oi=ao" target="_blank">Lei Ji</a>,
+      <a href="https://scholar.google.com/citations?user=piUkwMYAAAAJ&hl=en" target="_blank">Yeyun Gong</a>
+    </div>
+  </div>
+</div>
+
+    <div class="section">
+      <h2>Awards & Honors</h2>
+      <ul>
+        <li>Stars of Tomorrow, Microsoft Research Asia Internship Program, 2026</li>
+        <li>Outstanding Undergraduate Graduate, Fudan University, 2024</li>
+        <li>National Endeavor Scholarship, 2021–2023</li>
+        <li>Fudan University Merit Scholarship (Second & Third Class) and Academic Excellence Scholarship, 2021–2023</li>
+        <li>Merit Student & Outstanding Student Leader, Fudan University, 2020–2022</li>
+        <li>First Prize, Contemporary Undergraduate Mathematical Contest in Modeling (CUMCM), 2022</li>
+        <li>Second Prize (2021) & Third Prize (2022), National College Student Mathematics Competition (Class A)</li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>
+
 
   <a class="button" href="CV.pdf" target="_blank">Download CV</a>
 </body>
