@@ -57,6 +57,7 @@
       border: 1px solid #ddd;
       background: #f3f3f3;
       margin-top: 42px;
+      display: block;
     }
 
     .links {
@@ -106,7 +107,7 @@
       margin: 2px 0 4px;
     }
 
-    .small-links a {
+    .small-links a, .small-links span {
       margin-right: 10px;
       font-size: 15px;
     }
@@ -118,20 +119,21 @@
 
     .entry-with-logo {
       display: grid;
-      grid-template-columns: 60px 1fr;
+      grid-template-columns: 64px 1fr;
       gap: 16px;
       align-items: start;
       margin-bottom: 24px;
     }
 
     .logo-img {
-      width: 52px;
-      height: 52px;
+      width: 54px;
+      height: 54px;
       object-fit: contain;
       border-radius: 8px;
       background: #fff;
       border: 1px solid #eee;
       padding: 4px;
+      display: block;
     }
 
     @media (max-width: 760px) {
