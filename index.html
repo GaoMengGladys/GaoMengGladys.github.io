@@ -56,6 +56,7 @@
       object-fit: cover;
       border: 1px solid #ddd;
       background: #f3f3f3;
+      margin-top: 42px;
     }
 
     .links {
@@ -110,15 +111,27 @@
       font-size: 15px;
     }
 
-    .two-col {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
-    }
-
     .footnote {
       color: #666;
       font-size: 14px;
+    }
+
+    .entry-with-logo {
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      gap: 16px;
+      align-items: start;
+      margin-bottom: 24px;
+    }
+
+    .logo-img {
+      width: 52px;
+      height: 52px;
+      object-fit: contain;
+      border-radius: 8px;
+      background: #fff;
+      border: 1px solid #eee;
+      padding: 4px;
     }
 
     @media (max-width: 760px) {
@@ -128,10 +141,16 @@
 
       .profile-img {
         width: 180px;
+        margin-top: 0;
       }
 
-      .two-col {
+      .entry-with-logo {
         grid-template-columns: 1fr;
+      }
+
+      .logo-img {
+        width: 48px;
+        height: 48px;
       }
     }
   </style>
@@ -155,7 +174,6 @@
           <a href="https://math.fudan.edu.cn/f5/4f/c33035a324943/page.htm" target="_blank">Talent Program</a>.
         </p>
 
-
         <p>
           My research interests include reinforcement learning, efficient inference, and the theoretical foundations of large models.
           I am particularly interested in the mathematical principles behind learning algorithms, and I find it especially exciting
@@ -163,7 +181,6 @@
           I am currently a research intern at the Qwen-Omni Team, working on proactive-response learning.
           Previously, I interned at Microsoft Research Asia, where I worked on efficient multimodal retrieval and inference acceleration.
         </p>
-
 
         <div class="links">
           <a href="mailto:gaom24@mails.tsinghua.edu.cn">Email</a> /
@@ -178,123 +195,137 @@
       </div>
 
       <div>
-        <img src="photo.jpg" alt="Meng Gao profile photo" class="profile-img" />
+        <img src="picture/photo.jpg" alt="Meng Gao profile photo" class="profile-img" />
       </div>
     </div>
 
-<div class="section">
-  <h2>Publications</h2>
-  <p class="footnote"><em>(* denotes equal contribution.)</em></p>
+    <div class="section">
+      <h2>Publications</h2>
+      <p class="footnote"><em>(* denotes equal contribution.)</em></p>
 
-  <div class="paper">
-    <div class="paper-title">Skim and Skip: Hierarchical Adaptive Inference for Efficient Multimodal Retrieval</div>
-    <div class="authors">
-      <strong>Meng Gao*</strong>, Yizhen Zhang*, Yang Ding*, Ziqi Dai, Shuoshuo Zhang, Junjie Wang,
-      Taiqiang Wu, Chufan Shi, Lei Ji, Jian Jiao, Linfeng Zhang, Yeyun Gong, Yujiu Yang
-    </div>
-    <div class="venue">EMNLP 2026 (Main Conference)</div>
-    <div class="small-links">
-      <a href="https://github.com/GaoMengGladys/SAS" target="_blank">Code</a> /
-      <span>Paper coming soon</span>
-    </div>
-  </div>
+      <div class="paper">
+        <div class="paper-title">Skim and Skip: Hierarchical Adaptive Inference for Efficient Multimodal Retrieval</div>
+        <div class="authors">
+          <strong>Meng Gao*</strong>, Yizhen Zhang*, Yang Ding*, Ziqi Dai, Shuoshuo Zhang, Junjie Wang,
+          Taiqiang Wu, Chufan Shi, Lei Ji, Jian Jiao, Linfeng Zhang, Yeyun Gong, Yujiu Yang
+        </div>
+        <div class="venue">EMNLP 2026 (Main Conference)</div>
+        <div class="small-links">
+          <a href="https://github.com/GaoMengGladys/SAS" target="_blank">Code</a> /
+          <span>Paper coming soon</span>
+        </div>
+      </div>
 
-  <div class="paper">
-    <div class="paper-title">AnyCap: Omni-Modal Captioning with Instruction Alignment</div>
-    <div class="authors">
-      Yiming Ren*, Zhiqiang Lin*, Yu Li*, <strong>Meng Gao*</strong>, Junjie Wang, Zicheng Lin,
-      Jifeng Dai, Yujiu Yang, Wenhai Wang, Ruihang Chu
+      <div class="paper">
+        <div class="paper-title">AnyCap: Omni-Modal Captioning with Instruction Alignment</div>
+        <div class="authors">
+          Yiming Ren*, Zhiqiang Lin*, Yu Li*, <strong>Meng Gao*</strong>, Junjie Wang, Zicheng Lin,
+          Jifeng Dai, Yujiu Yang, Wenhai Wang, Ruihang Chu
+        </div>
+        <div class="venue">EMNLP 2026 (Main Conference)</div>
+        <div class="small-links">
+          <a href="https://arxiv.org/abs/2507.12841" target="_blank">Paper</a> /
+          <a href="https://github.com/qishisuren123/AnyCap" target="_blank">Code</a>
+        </div>
+      </div>
     </div>
-    <div class="venue">EMNLP 2026 (Main Conference)</div>
-    <div class="small-links">
-      <a href="https://arxiv.org/abs/2507.12841" target="_blank">Paper</a> /
-      <a href="https://github.com/qishisuren123/AnyCap" target="_blank">Code</a>
-    </div>
-  </div>
-</div>
 
     <div class="section">
-  <h2>Manuscripts</h2>
+      <h2>Manuscripts</h2>
 
-  <div class="paper">
-    <div class="paper-title">AudioSpan: Spanning the Duration and Depth of Audio Comprehension</div>
-    <div class="authors">
-      Wen Huang*, Yunfei Chu*, <strong>Meng Gao</strong>, Haolin He, Jin Xu
+      <div class="paper">
+        <div class="paper-title">AudioSpan: Spanning the Duration and Depth of Audio Comprehension</div>
+        <div class="authors">
+          Wen Huang*, Yunfei Chu*, <strong>Meng Gao</strong>, Haolin He, Jin Xu
+        </div>
+        <div class="venue">Manuscript</div>
+        <div class="small-links">
+          <a href="#" target="_blank">Preprint</a>
+        </div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">MLP: Modality-Aware Layer Pruning for Efficient Multimodal Retrieval</div>
+        <div class="authors">
+          Minji Seo, <strong>Meng Gao</strong>, Zhiwei Yu, Fanhong Li, Jaesik Park, Yujiu Yang, Lei Ji
+        </div>
+        <div class="venue">Manuscript</div>
+        <div class="small-links">
+          <a href="#" target="_blank">Preprint</a>
+        </div>
+      </div>
     </div>
-    <div class="venue">Manuscript</div>
-    <div class="small-links">
-      <a href="#" target="_blank">Preprint</a>
+
+    <div class="section">
+      <h2>Education</h2>
+
+      <div class="entry-with-logo">
+        <img src="picture/thu.jpg" alt="Tsinghua University logo" class="logo-img" />
+        <div class="entry">
+          <div class="entry-title">
+            <a href="https://www.tsinghua.edu.cn/" target="_blank">Tsinghua University</a>
+          </div>
+          <div class="meta">Master of Engineering in Artificial Intelligence (Aug. 2024 – Jun. 2027)</div>
+          <div>
+            Advisor:
+            <a href="https://scholar.google.com/citations?user=4gH3sxsAAAAJ&hl=en&oi=ao" target="_blank">Yujiu Yang</a>
+          </div>
+          <div>GPA: 3.9/4.0 (Top 10%)</div>
+          <div>Research interests: reinforcement learning, efficiency, and theoretical foundations of large models</div>
+        </div>
+      </div>
+
+      <div class="entry-with-logo">
+        <img src="picture/fdu.jpg" alt="Fudan University logo" class="logo-img" />
+        <div class="entry">
+          <div class="entry-title">
+            <a href="https://fudan.edu.cn/" target="_blank">Fudan University</a>
+          </div>
+          <div class="meta">
+            Bachelor of Science in Mathematics
+            <a href="https://math.fudan.edu.cn/f5/4f/c33035a324943/page.htm" target="_blank">(Talent Program)</a>
+            (Aug. 2020 – Jun. 2024)
+          </div>
+          <div>
+            Advisor:
+            <a href="https://yingzhouli.com/" target="_blank">Yingzhou Li</a>
+          </div>
+          <div>Research interests: fast algorithms and quantum computing</div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="paper">
-    <div class="paper-title">MLP: Modality-Aware Layer Pruning for Efficient Multimodal Retrieval</div>
-    <div class="authors">
-      Minji Seo, <strong>Meng Gao</strong>, Zhiwei Yu, Fanhong Li, Jaesik Park, Yujiu Yang, Lei Ji
+    <div class="section">
+      <h2>Experience</h2>
+
+      <div class="entry-with-logo">
+        <img src="picture/qwen.jpg" alt="Qwen logo" class="logo-img" />
+        <div class="entry">
+          <div class="entry-title">Qwen-Omni Team, Alibaba</div>
+          <div class="meta">Research Intern (Mar. 2026 – Present)</div>
+          <div>Topic: Proactive-response learning</div>
+          <div>
+            Mentors:
+            <a href="https://scholar.google.com/citations?user=41QhCyYAAAAJ&hl=en&oi=ao" target="_blank">Yunfei Chu</a>,
+            <a href="https://scholar.google.com/citations?user=COYDNmYAAAAJ&hl=en&oi=ao" target="_blank">Jin Xu</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry-with-logo">
+        <img src="picture/MSRA.jpg" alt="Microsoft Research Asia logo" class="logo-img" />
+        <div class="entry">
+          <div class="entry-title">Microsoft Research Asia (MSRA)</div>
+          <div class="meta">Research Intern (Jun. 2025 – Feb. 2026)</div>
+          <div>Topic: Efficient multimodal retrieval and inference acceleration</div>
+          <div>
+            Mentors:
+            <a href="https://scholar.google.com/citations?user=IruOVk4AAAAJ&hl=en&oi=ao" target="_blank">Lei Ji</a>,
+            <a href="https://scholar.google.com/citations?user=piUkwMYAAAAJ&hl=en" target="_blank">Yeyun Gong</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="venue">Manuscript</div>
-    <div class="small-links">
-      <a href="#" target="_blank">Preprint</a>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="section">
-  <h2>Education</h2>
-
-  <div class="entry">
-    <div class="entry-title">Tsinghua University</div>
-    <div class="meta">Master of Engineering in Artificial Intelligence (Aug. 2024 – Jun. 2027)</div>
-    <div>
-      Advisor:
-      <a href="https://scholar.google.com/citations?user=4gH3sxsAAAAJ&hl=en&oi=ao" target="_blank">Yujiu Yang</a>
-    </div>
-    <div>GPA: 3.9/4.0 (Top 10%)</div>
-    <div>Research interests: reinforcement learning, efficiency, and theoretical foundations of large models</div>
-  </div>
-
-  <div class="entry">
-    <div class="entry-title">Fudan University</div>
-    <div class="meta">
-      Bachelor of Science in Mathematics
-      <a href="https://math.fudan.edu.cn/f5/4f/c33035a324943/page.htm" target="_blank">(Talent Program)</a>
-      (Aug. 2020 – Jun. 2024)
-    </div>
-    <div>
-      Advisor:
-      <a href="https://yingzhouli.com/" target="_blank">Yingzhou Li</a>
-    </div>
-    <div>Research interests: fast algorithms and quantum computing</div>
-  </div>
-</div>
-
-<div class="section">
-  <h2>Experience</h2>
-
-  <div class="entry">
-    <div class="entry-title">Qwen-Omni Team, Alibaba</div>
-    <div class="meta">Research Intern (Mar. 2026 – Present)</div>
-    <div>Topic: Proactive learning</div>
-    <div>
-      Mentors:
-      <a href="https://scholar.google.com/citations?user=41QhCyYAAAAJ&hl=en&oi=ao" target="_blank">Yunfei Chu</a>,
-      <a href="https://scholar.google.com/citations?user=COYDNmYAAAAJ&hl=en&oi=ao" target="_blank">Jin Xu</a>
-    </div>
-  </div>
-
-  <div class="entry">
-    <div class="entry-title">Microsoft Research Asia (MSRA)</div>
-    <div class="meta">Research Intern (Jun. 2025 – Feb. 2026)</div>
-    <div>Topic: Efficient multimodal retrieval and inference acceleration</div>
-    <div>
-      Mentors:
-      <a href="https://scholar.google.com/citations?user=IruOVk4AAAAJ&hl=en&oi=ao" target="_blank">Lei Ji</a>,
-      <a href="https://scholar.google.com/citations?user=piUkwMYAAAAJ&hl=en" target="_blank">Yeyun Gong</a>
-    </div>
-  </div>
-</div>
 
     <div class="section">
       <h2>Awards & Honors</h2>
@@ -308,10 +339,5 @@
     </div>
 
   </div>
-</body>
-</html>
-
-
-  <a class="button" href="CV.pdf" target="_blank">Download CV</a>
 </body>
 </html>
