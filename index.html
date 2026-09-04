@@ -136,6 +136,25 @@
       display: block;
     }
 
+    .paper-with-thumb {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 18px;
+      align-items: start;
+      margin-bottom: 26px;
+    }
+    
+    .paper-thumb {
+      width: 140px;
+      height: 95px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      background: #fff;
+      display: block;
+    }
+
+
 
     @media (max-width: 760px) {
       .top {
@@ -155,6 +174,16 @@
         width: 56px;
         height: 56px;
       }
+
+      .paper-with-thumb {
+        grid-template-columns: 1fr;
+      }
+      
+      .paper-thumb {
+        width: 180px;
+        height: auto;
+      }
+
     }
 
   </style>
@@ -206,59 +235,72 @@
     <div class="section">
       <h2>Publications</h2>
       <p class="footnote"><em>(* denotes equal contribution.)</em></p>
-
-      <div class="paper">
-        <div class="paper-title">Skim and Skip: Hierarchical Adaptive Inference for Efficient Multimodal Retrieval</div>
-        <div class="authors">
-          <strong>Meng Gao*</strong>, Yizhen Zhang*, Yang Ding*, Ziqi Dai, Shuoshuo Zhang, Junjie Wang,
-          Taiqiang Wu, Chufan Shi, Lei Ji, Jian Jiao, Linfeng Zhang, Yeyun Gong, Yujiu Yang
-        </div>
-        <div class="venue">EMNLP 2026 (Main Conference)</div>
-        <div class="small-links">
-          <a href="https://arxiv.org/abs/2609.01613" target="_blank">Paper</a> /
-          <a href="https://github.com/GaoMengGladys/SAS" target="_blank">Code</a>
+    
+      <div class="paper-with-thumb">
+        <img src="picture/sas.png" alt="SAS paper thumbnail" class="paper-thumb" />
+        <div class="paper">
+          <div class="paper-title">Skim and Skip: Hierarchical Adaptive Inference for Efficient Multimodal Retrieval</div>
+          <div class="authors">
+            <strong>Meng Gao*</strong>, Yizhen Zhang*, Yang Ding*, Ziqi Dai, Shuoshuo Zhang, Junjie Wang,
+            Taiqiang Wu, Chufan Shi, Lei Ji, Jian Jiao, Linfeng Zhang, Yeyun Gong, Yujiu Yang
+          </div>
+          <div class="venue">EMNLP 2026 (Main Conference)</div>
+          <div class="small-links">
+            <a href="https://arxiv.org/abs/2609.01613" target="_blank">Paper</a> /
+            <a href="https://github.com/GaoMengGladys/SAS" target="_blank">Code</a>
+          </div>
         </div>
       </div>
-
-      <div class="paper">
-        <div class="paper-title">AnyCap: Omni-Modal Captioning with Instruction Alignment</div>
-        <div class="authors">
-          Yiming Ren*, Zhiqiang Lin*, Yu Li*, <strong>Meng Gao*</strong>, Junjie Wang, Zicheng Lin,
-          Jifeng Dai, Yujiu Yang, Wenhai Wang, Ruihang Chu
-        </div>
-        <div class="venue">EMNLP 2026 (Main Conference)</div>
-        <div class="small-links">
-          <a href="https://arxiv.org/abs/2507.12841" target="_blank">Paper</a> /
-          <a href="https://github.com/qishisuren123/AnyCap" target="_blank">Code</a>
+    
+      <div class="paper-with-thumb">
+        <img src="picture/anycap.png" alt="AnyCap paper thumbnail" class="paper-thumb" />
+        <div class="paper">
+          <div class="paper-title">AnyCap: Omni-Modal Captioning with Instruction Alignment</div>
+          <div class="authors">
+            Yiming Ren*, Zhiqiang Lin*, Yu Li*, <strong>Meng Gao*</strong>, Junjie Wang, Zicheng Lin,
+            Jifeng Dai, Yujiu Yang, Wenhai Wang, Ruihang Chu
+          </div>
+          <div class="venue">EMNLP 2026 (Main Conference)</div>
+          <div class="small-links">
+            <a href="https://arxiv.org/abs/2507.12841" target="_blank">Paper</a> /
+            <a href="https://github.com/qishisuren123/AnyCap" target="_blank">Code</a>
+          </div>
         </div>
       </div>
     </div>
-
+    
     <div class="section">
       <h2>Manuscripts</h2>
-
-      <div class="paper">
-        <div class="paper-title">AudioSpan: Spanning the Duration and Depth of Audio Comprehension</div>
-        <div class="authors">
-          Wen Huang*, Yunfei Chu*, <strong>Meng Gao</strong>, Haolin He, Jin Xu
-        </div>
-        <div class="venue">Manuscript</div>
-        <div class="small-links">
-          <a href="#" target="_blank">Preprint</a>
+    
+      <div class="paper-with-thumb">
+        <img src="picture/audiospan.png" alt="AudioSpan paper thumbnail" class="paper-thumb" />
+        <div class="paper">
+          <div class="paper-title">AudioSpan: Spanning the Duration and Depth of Audio Comprehension</div>
+          <div class="authors">
+            Wen Huang*, Yunfei Chu*, <strong>Meng Gao</strong>, Haolin He, Jin Xu
+          </div>
+          <div class="venue">Manuscript</div>
+          <div class="small-links">
+            <a href="#" target="_blank">Preprint</a>
+          </div>
         </div>
       </div>
-
-      <div class="paper">
-        <div class="paper-title">MLP: Modality-Aware Layer Pruning for Efficient Multimodal Retrieval</div>
-        <div class="authors">
-          Minji Seo, <strong>Meng Gao</strong>, Zhiwei Yu, Fanhong Li, Jaesik Park, Yujiu Yang, Lei Ji
-        </div>
-        <div class="venue">Manuscript</div>
-        <div class="small-links">
-          <a href="#" target="_blank">Preprint</a>
+    
+      <div class="paper-with-thumb">
+        <img src="picture/mlpd.png" alt="MLP paper thumbnail" class="paper-thumb" />
+        <div class="paper">
+          <div class="paper-title">MLP: Modality-Aware Layer Pruning for Efficient Multimodal Retrieval</div>
+          <div class="authors">
+            Minji Seo, <strong>Meng Gao</strong>, Zhiwei Yu, Fanhong Li, Jaesik Park, Yujiu Yang, Lei Ji
+          </div>
+          <div class="venue">Manuscript</div>
+          <div class="small-links">
+            <a href="#" target="_blank">Preprint</a>
+          </div>
         </div>
       </div>
     </div>
+
 
     <div class="section">
       <h2>Education</h2>
