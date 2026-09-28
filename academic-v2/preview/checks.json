@@ -1,0 +1,9 @@
+[
+  "Desktop navigation, sticky sidebar, active section and back-to-top passed.",
+  "All 12 images, CV and original page loaded without errors.",
+  "390px: no horizontal overflow; navigation passed.",
+  "1440px: no horizontal overflow; navigation passed.",
+  "Opening index.html directly works.",
+  "JavaScript-disabled mobile page retains content and navigation.",
+  "No JavaScript errors or failed local resource requests."
+]
